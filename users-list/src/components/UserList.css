@@ -1,0 +1,21 @@
+li {
+  background: #2a2a2a;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: .2s;
+  border: 1px solid transparent;
+}
+
+li:hover {
+  background: #323232;
+  border-color: #4f8cff;
+  transform: translateY(-2px);
+}
+
+li h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #f1f1f1;
+}
