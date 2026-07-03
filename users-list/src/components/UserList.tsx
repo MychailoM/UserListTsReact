@@ -1,5 +1,5 @@
 import type { User } from "../types/User";
-import './UserList.css'
+import "../App.css";
 
 type UserListProps= {
   users:User[];

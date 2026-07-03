@@ -21,7 +21,7 @@ function App() {
   const saveUser = () => {
       if (age === undefined) return;
       if(age===null||name===""){return alert("Заповніть поля")};
-    setUsers(prev => [...prev, {id: prev.length, name, age}])
+    setUsers(prev => [...prev, {id: Date.now(), name, age}])
     setName("")
     setAge(0)
     }
@@ -30,13 +30,13 @@ function App() {
     alert(`${user.name} (${user.age} років)`);
   }
 
-  return (
-    <>
+  return (    
+    <div>
       <input value={name} type="text" onChange={handleNameChange} placeholder='Enter your name' />
       <input value={age} type="number" onChange={handleAgeChange} placeholder='Enter your age' />
       <button type='button' onClick={saveUser}>Save</button>
       <UsersList users={users} onUserClick={onUserClick}/>
-    </>
+    </div>  
   )
 }
 
